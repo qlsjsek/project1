@@ -10,7 +10,7 @@ public interface UserService {
 	
 	public UserDto updateUser(UserDto userDto) throws Exception;
 	
-	public UserDto loginUser(String userId,String userPW) throws Exception;
+	public UserDto loginUser(String userId,String userPw) throws Exception;
 	
 	
 }
