@@ -12,5 +12,8 @@ public interface UserService {
 	
 	public UserDto loginUser(String userId,String userPw) throws Exception;
 	
+	public String findUserIdByIdentityNoAndUserName(String userIdentityNo,String userName) throws Exception;
+	
+	public String findUserPwByUserIdAndUserPhone(String userId, String userPhone) throws Exception;
 	
 }
