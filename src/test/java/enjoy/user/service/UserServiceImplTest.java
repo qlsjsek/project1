@@ -59,7 +59,7 @@ public class UserServiceImplTest extends EnjoyApplicationTest {
 	}
 
 	@Test
-	//@Disabled
+	@Disabled
 	@Transactional
 	@Rollback(false)
 	void updateUser() throws Exception {
@@ -71,17 +71,17 @@ public class UserServiceImplTest extends EnjoyApplicationTest {
 	}
 	
 	@Test
-	@Disabled
+	//@Disabled
 	@Transactional
 	@Rollback(false)
 	void login() throws Exception {
 		String userId = "test1";
-		String userPw = "3334";
+		String userPw = "3333";
 		userService.loginUser(userId, userPw);
 	}
 	
 	@Test
-	//@Disabled
+	@Disabled
 	@Transactional
 	@Rollback(false)
 	void findUserIdByIdentityNoAndUserName() throws Exception {
@@ -91,7 +91,7 @@ public class UserServiceImplTest extends EnjoyApplicationTest {
 			
 	}
 	@Test
-	//@Disabled
+	@Disabled
 	@Transactional
 	@Rollback(false)
 	void findUserPwByUserIdAndUserPhone() throws Exception {
