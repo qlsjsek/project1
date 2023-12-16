@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>메인페이지</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+	<div th:insert="~{common_header :: headerFragment}"></div>
+	<div class="button-container">
+		<a href="user_login" class="button">
+			<img src="images/logo.png" alt="Button 1 Image">
+			당첨번호 조회
+		</a>
+		<a href="index" class="button">
+			<img src="images/logo.png" alt="Button 2 Image">
+			번호 구매
+		</a>
+	</div>
+</body>
+
+</html>

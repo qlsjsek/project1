@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>아이디 찾기</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+	<div th:insert="~{common_header :: headerFragment}"></div>
+	<section class="id">
+		<h2>아이디 찾기</h2>
+		<div class="findId">
+			<div class="field">
+				<b>이름</b>
+				<span class="placehold-text"><input type="text"></span>
+			</div>
+			<div class="field">
+				<b>주민등록번호</b>
+				<span class="placehold-text"><input type="text"></span>
+			</div>
+			<input type="submit" value="아이디 찾기">
+		</div>
+	</section>
+	
+	<section class="pw">
+		<h2>비밀번호 찾기</h2>
+		<div class="findPw">
+			<div class="field">
+				<b>아이디</b>
+				<span class="placehold-text"><input type="text"></span>
+			</div>
+			<div class="field">
+				<b>휴대전화</b>
+				<span class="placehold-text"><input type="text"></span>
+			</div>
+			<input type="submit" value="비밀번호 찾기">
+		</div>
+	</section>
+</body>
+
+</html>

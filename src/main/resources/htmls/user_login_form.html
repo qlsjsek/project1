@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div th:insert="~{common_header :: headerFragment}"></div>
+	<div th:insert="~{common_header :: headerFragment}"></div>
 	<section class="login">
 		<h2>로그인</h2>
 		<ul>
@@ -19,19 +19,19 @@
 		</ul>
 		<div>
 			<ul>
-				<li><a href="">회원가입</a></li>
-				<li><a href="">아이디 찾기</a></li>
-				<li><a href="">비밀번호 찾기</a></li>
+				<li><a href="user_rite_form">회원가입</a></li>
+				<li><a href="user_find_id_form">아이디 찾기</a></li>
+				<li><a href="user_find_pw_form">비밀번호 찾기</a></li>
 			</ul>
 		</div>
 	</section>
 
-<script>
-	function login(){
-		alert("버튼클릭성공!");
-	}
-	
-</script>
+	<script>
+		function login() {
+			alert("버튼클릭성공!");
+		}
+
+	</script>
 
 </body>
 

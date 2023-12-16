@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>회원가입</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+	<div th:insert="~{common_header :: headerFragment}"></div>
+	<section class="write">
+	<h2>회원가입</h2>
+	<div class="member">
+		<div class="field">
+			<b>아이디</b>
+			<span class="placehold-text"><input type="text"></span>
+		</div>
+		<div class="field">
+			<b>비밀번호</b>
+			<input class="userpw" type="password">
+		</div>
+		<div class="field">
+			<b>비밀번호 재확인</b>
+			<input class="userpw-confirm" type="password">
+		</div>
+		<div class="field">
+			<b>이름</b>
+			<input type="text">
+		</div>
+		<div class="field birth">
+			<b>생년월일</b>
+			<div>
+				<input type="text" placeholder="년(4자)">
+				<input type="text" placeholder="월">
+				<input type="text" placeholder="일">
+			</div>
+		</div>
+		<div class="field">
+			<b>본인 확인 이메일<small>(선택)</small></b>
+			<input type="email" placeholder="선택입력">
+		</div>
+
+		<div class="field tel-number">
+			<b>휴대전화</b>
+			<input type="tel" placeholder="전화번호 입력">
+		</div>
+		<input type="submit" value="가입하기">
+	</div>
+	</section>
+</body>
+
+</html>
