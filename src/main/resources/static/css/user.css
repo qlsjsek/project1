@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/******************user login******************/
+.login {
+	width: 410px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login h2 {
+	padding: 0 0 20px;
+	font-size: 32px;
+	color: #111;
+	border-bottom: 2px solid #111;
+	text-align: center;
+	line-height: 1;
+}
+
+.login>ul {
+	padding: 40px 0 33px;
+}
+
+.login>ul li {
+	padding: 0 0 12px;
+	text-align: left;
+}
+
+.login>ul li input {
+	width: 100%;
+	height: 46px;
+	box-sizing: border-box;
+	text-indent: 16px;
+}
+
+.login>ul li input::-webkit-input-placeholder {
+	font-size: 16px;
+	color: #9fa19f;
+}
+
+.login>ul li input[type="checkbox"] {
+	position: absolute;
+	left: -3000%;
+}
+
+.login>ul li input[type="checkbox"]+label {
+	height: 36px;
+	line-height: 36px;
+}
+
+.login>ul li input[type="checkbox"]+label:before {
+	content: "";
+	display: inline-block;
+	margin: 0 10px 0 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #666;
+	background: #fff;
+	vertical-align: -5px;
+}
+
+.login>ul li input[type="checkbox"]:checked+label:before {
+	background: url(../images/ico_check_on.png) no-repeat center #333;
+	border-color: #333;
+}
+
+.login button {
+	width: 100%;
+	height: 56px;
+	background: #ed1c24;
+	font-size: 18px;
+	color: #fff;
+}
+
+.login div ul {
+	display: flex;
+	justify-content: center;
+}
+
+.login div ul li {
+	position: relative;
+	padding: 0 18px;
+}
+
+.login div ul li~li:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 4px;
+	height: 14px;
+	width: 1px;
+	background: #111;
+	transform: rotate(25deg);
+}
+
+.login div ul li a {
+	font-size: 14px;
+	color: #111;
+}
+
+/***************user_write********************/
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+.write {
+	width: 410px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.write h2 {
+	padding: 0 0 20px;
+	font-size: 32px;
+	color: #111;
+	border-bottom: 2px solid #111;
+	text-align: center;
+	line-height: 1;
+}
+
+.member {
+	width: 400px;
+	margin: auto;
+	padding: 0 20px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+
+.member .field {
+	margin: 5px 0;
+}
+
+.member b {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.member input:not(input[type=radio]),
+.member select {
+	border: 1px solid #dadada;
+	padding: 15px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.member input[type=button],
+.member input[type=submit] {
+	background-color: #2db400;
+	color: #fff
+}
+
+.member input:focus,
+.member select:focus {
+	border: 1px solid #2db400;
+}
+
+.field.birth div {
+	display: flex;
+	gap: 10px;
+}
+
+.field.birth input {
+	height: 40px;
+}
+
+
+.field.tel-number div {
+	display: flex;
+}
+
+
+.field.gender div {
+	border: 1px solid #dadada;
+	padding: 15px 5px;
+	background-color: #fff;
+}
+
+/***************findId, findPw ********************/
+.id {
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+}
+.id h2 {
+	padding: 0 0 20px;
+	font-size: 32px;
+	color: #111;
+	border-bottom: 2px solid #111;
+	text-align: center;
+	line-height: 1;
+}
+.pw {
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	transform: translate(-50%, -50%);
+}
+.pw h2 {
+	padding: 0 0 20px;
+	font-size: 32px;
+	color: #111;
+	border-bottom: 2px solid #111;
+	text-align: center;
+	line-height: 1;
+}
+
+
+.findId,
+.findPw {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.field {
+    margin-bottom: 30px;
+}
+
+b {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.placehold-text {
+    display: block;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.findId input[type="submit"],
+.findPw input[type="submit"] {
+    float: right;
+}
+
+.findPw input[type="submit"] {
+    background-color: #3498db;
+}
+
+.findPw input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>장바구니</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+	<div th:insert="~{common_header :: headerFragment}"></div>
+	<section class="cart">
+		<table class="cart__list">
+			<form>
+				<thead>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td colspan="2">상품정보</td>
+						<td>옵션</td>
+						<td>상품금액</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="cart__list__detail">
+						<td><input type="checkbox"></td>
+						<td><img src="images/logo.png" alt="magic keyboard"></td>
+						<td><a href="#">애플 공식 브랜드스토어</a><span class="cart__list__smartstore"> 스마트스토어</span>
+							<p>Apple 매직 키보드 - 한국어(MK2A3KH/A)</p>
+							<sapn class="price">116,62원</sapn><span
+								style="text-decoration: line-through; color: lightgray;">119,000</span>
+						</td>
+						<td class="cart__list__option">
+							<p>모델명 : 키보드 - 한국어 MK2A3KH/A / 1개</p>
+							<button class="cart__list__optionbtn">주문조건 추가/변경</button>
+						</td>
+						<td><span class="price">116,620원</span><br>
+							<button class="cart__list__orderbtn">주문하기</button>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><input type="checkbox"> <button class="cart__list__optionbtn">선택상품 삭제</button>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</form>
+		</table>
+	</section>
+
+</body>
+
+</html>
